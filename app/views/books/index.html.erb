@@ -26,4 +26,6 @@
 
 
 <h2>New book</h2>
-<%= render 'form'%>
+<%= form_for(@book) do |f| %>
+  <%= render 'form', { f: f } %>
+<% end %>
